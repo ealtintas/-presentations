@@ -27,23 +27,20 @@ REFS:
 
 - DevOps Hakkında genel bilgiler
 - Docker'a Genel Bakış
-- Linux’a giriş
 - Docker'la Çalışmaya Başlamak
 - Container (Makine) ve Kalıp (İmaj) Depolama
-- Docker Compose
 - Docker Swarm
-- DockerFile Oluşturma
 - Portainer
 
 ---
 
 # Eğitim Konuları - 2
 
-- Git kullanımına giriş
-- Betik programlamaya giriş
+- Linux’a giriş
+- Docker Compose
+- DockerFile Oluşturma
 - İleri Docker Konuları
 - Örnek Projeler ve Uygulamalar
-  - Jira
   - Nexus
   - Jenkins
 
@@ -358,6 +355,24 @@ sed, vi, tar, chmod, md5sum/sha256sum, find, env, iconv, tee, paste, join
 
 ---
 
+# docker build
+
+```
+<html lang="en">
+<head><title>Dockerfile</title></head>
+<body><h2>Merhaba Nginx!!!</h2></body>
+</html>
+```
+
+```
+FROM nginx:latest
+COPY ./index.html /usr/share/nginx/html/index.html
+```
+
+ref: https://www.docker.com/blog/how-to-use-the-official-nginx-docker-image/
+
+---
+
 ## Notlar:
 
 .dockerignore docker build işlemine dahil edilmesi istenmeyen dosyaların listesi yazıllır.
@@ -439,7 +454,7 @@ Projeleri yerelde docker içerisinde kolay bir şekilde test etmek için hazırl
 
 ---
 
-# GitLab & Jira & Nexus
+# GitLab & Jenkins & Nexus
 
 ---
 
